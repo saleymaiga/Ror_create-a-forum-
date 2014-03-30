@@ -1,2 +1,12 @@
-<h1>Posts#new</h1>
-<p>Find me in app/views/posts/new.html.erb</p>
+<h1>Create a New Topic </h1>
+
+<%= form_for(@post)  do |f| %>
+  <%= f.label(:topic, "Name of Topic") %>
+  <%= f.text_field(:topic) %>
+  <%= f.label(:title, "Title") %>
+  <%= f.text_field(:title) %>
+  <%= f.label(:content, "content") %>
+  <%= f.text_field(:content) %>
+  <%= f.submit(:submit) %>		
+<% end %>
+
