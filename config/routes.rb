@@ -1,6 +1,6 @@
 Myapp::Application.routes.draw do
 
-  get "home/index"
+  
     root "home#index"
 
   
@@ -12,6 +12,12 @@ Myapp::Application.routes.draw do
 
 
     get "topics/index"
+
+
+
+
+
+
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
